@@ -1,4 +1,4 @@
-import pymongo
+ import pymongo
 from pymongo import MongoClient
 
 # creating connectioons for communicating with Mongo DB
@@ -9,7 +9,7 @@ db = client.CustomerData
 def insert():
         customerId = input('Enter Customer ID : ')
         customerName = input('Enter Customer Name : ')
-        customerAge = input('Enter Customer Age :')
+        customerAge = input('Enter Customer Age : ')
         customerPhone = input('Enter Customer Phone Number : ')
         db.Customers.insert_one(
 	        {
